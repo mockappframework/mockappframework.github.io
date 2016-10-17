@@ -1,0 +1,129 @@
+/*BASE*/
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    letter-spacing: -0.3px;
+}
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    background-color:#fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.component-not-installed {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #e68b8b;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  background: #fff;
+}
+.component-not-installed b {
+  color: #f55c5c;
+}
+.center {
+  text-align: center;
+}
+.center-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.padding {
+  padding: 10px;
+}
+button.icon {
+  background: none;
+  border: none;
+}
+button {
+  -webkit-transition: color 500ms ease;
+  -moz-transition: color 500ms ease;
+  -ms-transition: color 500ms ease;
+  -o-transition: color 500ms ease;
+  transition: color 500ms ease;
+}
+@keyframes color-mockapp {
+  0% {
+    color: #ccc;
+  }
+  50% {
+    color: #00b698;
+  }
+  100% {
+    color: #ccc;
+  }
+}
+.color-mockapp {
+  animation: color-mockapp 3s infinite;
+}
+/*EMPTY-BOX*/
+.empty-box {
+    color: #ccc;
+}
+.empty-box i {
+  font-size: 120px;
+}
+.empty-box h1 {
+  font-weight: 300;
+}
+/*HEADER*/
+.header {
+  top: 0;
+  height: 52px;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  padding-top: 14px;
+}
+.header img {
+  height: 30px;
+}
+.header h1 {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.header button {
+  font-size: 20px;
+}
+.header button.left {
+  float: left;
+}
+.header button.right {
+  float: right;
+}
+.header .left button {
+  margin-right: 8px;
+}
+.header .right button {
+  margin-left: 8px;
+}
+
+/*CONTENT*/
+.content {
+  z-index: 50;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.content.has-header {
+  margin-top: 52px;
+}

@@ -7,11 +7,350 @@
     <link rel="canonical" href="https://mockappframework.github.io/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,700|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="/icons/materialdesign.css">
+    <link rel="stylesheet" href="/lib/mockapp-colors.css">
+    <link rel="stylesheet" href="/lib/mockapp.css">
     <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/lib/devices.min.css" type="text/css">
+
+    <link rel="stylesheet" href="/lib/codemirror.css">
+    <script type="text/javascript" src="/lib/codemirror.js"></script>
+    <script type="text/javascript" src="/lib/xml/xml.js"></script>
+    <script type="text/javascript" src="/lib/javascript/javascript.js"></script>
+    <script type="text/javascript" src="/lib/css/css.js"></script>
+    <script type="text/javascript" src="/js/docs.js"></script>
 </head>
 <body>
-  <div class="content">
-    <h1>Developing...</h1>
+  <div class="menu-top">
+      <img src="img/logo_mockapp_white.png" />
+      <div class="right">
+        <ul>
+          <a id="start" href="docs.html#start">
+            <li>Getting Started</li>
+          </a>
+          <a id="tools" href="#tools">
+            <li>Tools</li>
+          </a>
+          <a id="components" href="#components">
+            <li>Components</li>
+          </a>
+          <a id="service" href="#service">
+            <li>Services</li>
+          </a>
+        </ul>
+      </div>
   </div>
+  <div class="docs-content">
+    <div class="doc-menu">
+      <div class="doc-search materialdesign-searching-magnifying-glass">
+        <input type="search" placeholder="Search...">
+      </div>
+      <div class="groups">
+        <!-- GROUP -->
+        <div id="options-start" class="options">
+          <a href="#start"><div class="option">Getting Started</div></a>
+          <div class="itens">
+            <a onclick="showItem(this)"><div class="item-menu">about mockapp</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">installation</div></a>
+          </div>
+        </div>
+
+        <!-- GROUP -->
+        <div id="options-tools" class="options">
+          <a href="#tools">
+            <div class="option">Tools</div>
+          </a>
+          <div class="itens">
+            <a onclick="showItem(this)"><div class="item-menu">overview</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">new</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">preview</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">build</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">run</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">icons</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">add icons</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">add fonts</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">add page</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">add controller</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">add service</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">config</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">docs</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">bugs</div></a>
+          </div>
+        </div>
+
+        <!-- GROUP -->
+        <div id="options-components" class="options">
+          <a href="#components">
+            <div class="option">Components</div>
+          </a>
+          <div class="itens">
+            <a onclick="showItem(this)"><div class="item-menu">overview</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">colors</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">fonts</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">icons</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">header</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">footer</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">content</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">buttons</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">badges</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">lists</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">cards</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">inputs</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">checkbox</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">radio</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">range</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">select</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">toggle</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">tabs</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">slides</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">menus</div></a>
+          </div>
+        </div>
+
+        <!-- GROUP -->
+        <div id="options-service" class="options">
+          <a href="#service"><div class="option">Services</div></a>
+          <div class="itens">
+            <a onclick="showItem(this)"><div class="item-menu">overview</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">alerts</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">loading</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">modals</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">navigation</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">popover</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">toast</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">gestures</div></a>
+            <a onclick="showItem(this)"><div class="item-menu">database</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="doc-content" id="doc-content">
+
+      <div option="start" item="about mockapp" class="doc-content-item">
+        <h1>About Mockapp</h1>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div option="start" item="installation" class="doc-content-item">
+        <h1>Installation</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div option="tools" item="overview" class="doc-content-item">
+        <h1>Command line tools</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div option="tools" item="new" class="doc-content-item">
+        <h1>New</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div option="tools" item="preview" class="doc-content-item">
+        <h1>Preview</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div option="tools" item="build" class="doc-content-item">
+        <h1>Build</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div option="tools" item="run" class="doc-content-item">
+        <h1>Run</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div option="tools" item="icons" class="doc-content-item">
+        <h1>Icons</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div option="tools" item="add icons" class="doc-content-item">
+        <h1>Add Icons</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div option="tools" item="add fonts" class="doc-content-item">
+        <h1>Add Fonts</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div option="tools" item="add page" class="doc-content-item">
+        <h1>Add Page</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div option="tools" item="add controller" class="doc-content-item">
+        <h1>Add Controller</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div option="tools" item="add service" class="doc-content-item">
+        <h1>Add Service</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div option="tools" item="config" class="doc-content-item">
+        <h1>Config</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div option="tools" item="docs" class="doc-content-item">
+        <h1>Docs</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div option="tools" item="bugs" class="doc-content-item">
+        <h1>Bugs</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div option="components" item="overview" class="doc-content-item">
+        <h1>Overview Components</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div option="components" item="colors" class="doc-content-item">
+        <h1>Colors</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div option="components" item="fonts" class="doc-content-item">
+        <h1>Fonts</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div option="components" item="icons" class="doc-content-item">
+        <h1>Icons</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div option="components" item="header" class="doc-content-item">
+        <h1>Header</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          <div class="preview">
+            <div class="box-mobile">
+              <div class="marvel-device s5 white">
+                  <div class="top-bar"></div>
+                  <div class="sleep"></div>
+                  <div class="camera"></div>
+                  <div class="sensor"></div>
+                  <div class="speaker"></div>
+                  <div class="screen">
+                      <iframe width="100%" height="100%;"></iframe>
+                  </div>
+                  <div class="home"></div>
+              </div>
+            </div>
+            <div class="box-code">
+              <h2>HTML</h2>
+<textarea class="code-bind">
+<div class="header red">
+  <h1>Title of header</h1>
+</div></textarea>
+              <div class="actions">
+                <button type="button" class="run-preview">LIVE CODE</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="preview">
+            <div class="box-mobile">
+              <div class="marvel-device s5 white">
+                  <div class="top-bar"></div>
+                  <div class="sleep"></div>
+                  <div class="camera"></div>
+                  <div class="sensor"></div>
+                  <div class="speaker"></div>
+                  <div class="screen">
+                      <iframe width="100%" height="100%;"></iframe>
+                  </div>
+                  <div class="home"></div>
+              </div>
+            </div>
+            <div class="box-code">
+              <h2>HTML</h2>
+<textarea class="code-bind">
+<div class="header teal">
+  <div class="left">
+    <button class="icon">
+      <i class="materialdesign-menu-button"></i>
+    </button>
+  </div>
+  <h1>Title of header</h1>
+  <div class="right">
+    <button class="icon">
+      <i class="materialdesign-searching-magnifying-glass"></i>
+    </button>
+    <button class="icon">
+      <i class="materialdesign-show-more-button-with-three-dots"></i>
+    </button>
+  </div>
+</div></textarea>
+              <div class="actions">
+                <button type="button" class="run-preview">LIVE CODE</button>
+              </div>
+            </div>
+          </div>
+        </p>
+      </div>
+
+      <div option="components" item="footer" class="doc-content-item">
+        <h1>Footer</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
 </body>
 </html>

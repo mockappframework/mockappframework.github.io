@@ -1,0 +1,53 @@
+.red, .red-500 { color: #F44336; }
+.pink, .pink-500 { color: #E91E63; }
+.purple, .purple-500 { color: #9C27B0; }
+.deep-purple, .deep-purple-500 { color: #673AB7; }
+.indigo, .indigo-500 { color: #3F51B5; }
+.blue, .blue-500 { color: #2196F3; }
+.light-blue, .light-blue-500 { color: #03A9F4; }
+.cyan, .cyan-500 { color: #00BCD4; }
+.teal, .teal-500 { color: #009688; }
+.green, .green-500 { color: #4CAF50; }
+.light-green, .light-green-500 { color: #8BC34A; }
+.lime, .lime-500 { color: #CDDC39; }
+.yellow, .yellow-500 { color: #FFEB3B; }
+.amber, .amber-500 { color: #FFC107; }
+.orange, .orange-500 { color: #FF9800; }
+.deep-orange, .deep-orange-500 { color: #FF5722; }
+.brown, .brown-500 { color: #795548; }
+.grey, .grey-500 { color: #9E9E9E; }
+.blue-grey, .blue-grey-500 { color: #607D8B; }
+.black { color: #000000; }
+.white { color: #FFFFFF; }
+
+.content.red, .header.red, button.red, .header.red-500, button.red-500 { background-color: #F44336; color: #fff; }
+.content.pink, .header.pink, button.pink, .header.pink-500, button.pink-500 { background-color: #E91E63; color: #fff; }
+.content.purple, .header.purple, button.purple, .header.purple-500, button.purple-500 { background-color: #9C27B0; color: #fff; }
+.content.deep- .header.deep-purple, button.deep-purple, .header.deep-purple-500, button.deep-purple-500 { background-color: #673AB7; color: #fff; }
+.content.indigo, .header.indigo, button.indigo, .header.indigo-500, button.indigo-500 { background-color: #3F51B5; color: #fff; }
+.content.blue, .header.blue, button.blue, .header.blue-500, button.blue-500 { background-color: #2196F3; color: #fff; }
+.content.light- .header.light-blue, button.light-blue, .header.light-blue-500, button.light-blue-500 { background-color: #03A9F4; color: #fff; }
+.content.cyan, .header.cyan, button.cyan, .header.cyan-500, button.cyan-500 { background-color: #00BCD4; color: #fff; }
+.content.teal, .header.teal, button.teal, .header.teal-500, button.teal-500 { background-color: #009688; color: #fff; }
+.content.green, .header.green, button.green, .header.green-500, button.green-500 { background-color: #4CAF50; color: #fff; }
+.content.light- .header.light-green, button.light-green, .header.light-green-500, button.light-green-500 { background-color: #8BC34A; color: #000; }
+.content.lime, .header.lime, button.lime, .header.lime-500, button.lime-500 { background-color: #CDDC39; color: #000; }
+.content.yellow, .header.yellow, button.yellow, .header.yellow-500, button.yellow-500 { background-color: #FFEB3B; color: #000; }
+.content.amber, .header.amber, button.amber, .header.amber-500, button.amber-500 { background-color: #FFC107; color: #000; }
+.content.orange, .header.orange, button.orange, .header.orange-500, button.orange-500 { background-color: #FF9800; color: #fff; }
+.content.deep- .header.deep-orange, button.deep-orange, .header.deep-orange-500, button.deep-orange-500 { background-color: #FF5722; color: #fff; }
+.content.brown, .header.brown, button.brown, .header.brown-500, button.brown-500 { background-color: #795548; color: #fff; }
+.content.grey, .header.grey, button.grey, .header.grey-500, button.grey-500 { background-color: #9E9E9E; color: #000; }
+.content.blue- .header.blue-grey, button.blue-grey, .header.blue-grey-500, button.blue-grey-500 { background-color: #607D8B; color: #fff; }
+.content.black, .header.black, button.black { background-color: #000; color: #fff; }
+.content.white, .header.white, button.white { background-color: #fff; color: #000; }
+
+.header button{ color: #fff; }
+.header.light-green button,
+.header.lime button,
+.header.yellow button,
+.header.amber button,
+.header.grey button,
+.header.white button
+{ color: #000; }
+.header button:active { color: rgba(255, 255, 255, 0.2); }
