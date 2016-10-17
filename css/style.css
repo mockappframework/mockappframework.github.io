@@ -340,9 +340,6 @@ iframe {
   overflow: hidden;
   padding: 10px;
 }
-.header, .content, .footer {
-  display: none;
-}
 .box-code {
   border: 1px solid #e6e9ee;
   background: white;
